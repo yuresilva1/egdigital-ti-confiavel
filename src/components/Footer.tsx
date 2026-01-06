@@ -24,18 +24,21 @@ const Footer = () => {
               <a
                 href="#"
                 className="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+                aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
               </a>
               <a
                 href="#"
                 className="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+                aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
               </a>
               <a
                 href="#"
                 className="w-9 h-9 rounded-lg bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+                aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
               </a>
@@ -117,12 +120,13 @@ const Footer = () => {
               © {currentYear} EG Digital. Todos os direitos reservados.
             </p>
             <div className="flex gap-6 text-sm text-primary-foreground/60">
-              <a href="#" className="hover:text-white transition-colors">
+              {/* Using Link for smooth navigation, even if target is '#' */}
+              <Link to="#" className="hover:text-white transition-colors">
                 Política de Privacidade
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
+              </Link>
+              <Link to="#" className="hover:text-white transition-colors">
                 Termos de Uso
-              </a>
+              </Link>
             </div>
           </div>
         </div>
