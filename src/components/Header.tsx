@@ -41,15 +41,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <nav className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg gradient-accent flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
-              <span className="text-accent-foreground font-bold text-lg">EG</span>
-            </div>
-            <span className={`font-bold text-xl transition-colors ${
-              isScrolled ? "text-foreground" : "text-white"
-            }`}>
-              Digital
-            </span>
+          <Link to="/" className="flex items-center group">
+            <img 
+              src="/logo-eg-digital.png" 
+              alt="EG Digital Logo" 
+              className="h-8 transition-opacity"
+            />
           </Link>
 
           {/* Desktop Navigation */}

@@ -11,10 +11,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
-                <span className="text-white font-bold text-lg">EG</span>
-              </div>
-              <span className="font-bold text-xl text-white">Digital</span>
+              <img 
+                src="/logo-eg-digital.png" 
+                alt="EG Digital Logo" 
+                className="h-10"
+              />
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Seu departamento de TI terceirizado. Cuidamos da tecnologia para você focar no seu negócio.
