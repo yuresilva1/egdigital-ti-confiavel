@@ -47,23 +47,7 @@ const Diferenciais = () => {
     },
   ];
 
-  const testimonials = [
-    {
-      quote: "Finalmente encontramos uma empresa de TI que fala nossa língua. Sem complicação, resolução rápida.",
-      author: "Maria S.",
-      role: "Diretora Administrativa",
-    },
-    {
-      quote: "O atendimento pelo WhatsApp é muito prático. Problema resolvido em minutos, não em dias.",
-      author: "Carlos R.",
-      role: "Empresário",
-    },
-    {
-      quote: "A manutenção preventiva fez toda diferença. Menos paradas, mais produtividade.",
-      author: "Ana L.",
-      role: "Gerente de Operações",
-    },
-  ];
+  // Testimonials and Our Promise sections are removed to maintain honesty about the client base.
 
   return (
     <Layout>
@@ -117,13 +101,13 @@ const Diferenciais = () => {
         </div>
       </section>
 
-      {/* Our Promise */}
+      {/* New CTA Section (Replacing Our Promise) */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <SectionTitle
-                badge="Nossa Promessa"
+                badge="Nossa Abordagem"
                 title="Compromisso com a sua tranquilidade"
                 centered={false}
               />
@@ -131,19 +115,19 @@ const Diferenciais = () => {
                 {[
                   {
                     title: "Transparência Total",
-                    desc: "Você sempre sabe o que está acontecendo, quanto custa e por que estamos fazendo cada ação.",
+                    desc: "Comunicação clara e honesta em todas as interações. Você sempre sabe o que está acontecendo e por que estamos fazendo cada ação.",
                   },
                   {
                     title: "Agilidade no Atendimento",
-                    desc: "Entendemos que tempo parado é prejuízo. Por isso, priorizamos resolver rápido.",
+                    desc: "Entendemos que tempo parado é prejuízo. Por isso, priorizamos resolver rápido, com SLA definido.",
                   },
                   {
                     title: "Parceria de Longo Prazo",
-                    desc: "Não somos fornecedores distantes. Conhecemos sua empresa e trabalhamos como parte do seu time.",
+                    desc: "Atuamos como parte do seu time. Conhecemos sua empresa a fundo para oferecer soluções que realmente funcionam.",
                   },
                   {
                     title: "Melhoria Contínua",
-                    desc: "Estamos sempre buscando novas formas de ajudar sua empresa a funcionar melhor.",
+                    desc: "Estamos sempre buscando novas formas de otimizar sua infraestrutura e garantir a máxima produtividade.",
                   },
                 ].map((item) => (
                   <div key={item.title} className="flex items-start gap-4">
@@ -159,73 +143,37 @@ const Diferenciais = () => {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="bg-card rounded-2xl p-8 shadow-xl border border-border">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-14 h-14 rounded-xl gradient-accent flex items-center justify-center">
-                    <ThumbsUp className="w-7 h-7 text-accent-foreground" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground">Satisfação Garantida</h3>
-                    <p className="text-muted-foreground">Nosso compromisso com você</p>
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-6 text-center">
-                  <div className="p-4 bg-secondary/50 rounded-xl">
-                    <div className="text-3xl font-bold text-accent mb-1">98%</div>
-                    <div className="text-sm text-muted-foreground">Satisfação dos clientes</div>
-                  </div>
-                  <div className="p-4 bg-secondary/50 rounded-xl">
-                    <div className="text-3xl font-bold text-accent mb-1">&lt;2h</div>
-                    <div className="text-sm text-muted-foreground">Tempo médio de resposta</div>
-                  </div>
-                  <div className="p-4 bg-secondary/50 rounded-xl">
-                    <div className="text-3xl font-bold text-accent mb-1">24/7</div>
-                    <div className="text-sm text-muted-foreground">Suporte emergencial</div>
-                  </div>
-                  <div className="p-4 bg-secondary/50 rounded-xl">
-                    <div className="text-3xl font-bold text-accent mb-1">100%</div>
-                    <div className="text-sm text-muted-foreground">Foco no cliente</div>
-                  </div>
-                </div>
+            <div className="relative p-8 bg-card rounded-2xl shadow-xl border border-border">
+              <h3 className="text-2xl font-bold text-foreground mb-4">
+                Pronto para experimentar a diferença?
+              </h3>
+              <p className="text-muted-foreground mb-6">
+                Fale com nossa equipe e descubra como um suporte de TI transparente e eficiente pode transformar o dia a dia da sua empresa.
+              </p>
+              <Button variant="hero" size="lg" className="w-full" asChild>
+                <Link to="/contato">
+                  Solicitar Proposta
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
+              </Button>
+              <div className="mt-4 text-center">
+                <Button variant="whatsapp" size="sm" asChild>
+                  <a
+                    href="https://wa.me/5500000000000"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Phone className="w-4 h-4 mr-2" />
+                    Ou Chame no WhatsApp
+                  </a>
+                </Button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <SectionTitle
-            badge="Depoimentos"
-            title="O que nossos clientes dizem"
-            subtitle="A opinião de quem já confia na EG Digital."
-          />
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {testimonials.map((testimonial) => (
-              <div
-                key={testimonial.author}
-                className="bg-card rounded-2xl p-6 shadow-card border border-border"
-              >
-                <div className="mb-4">
-                  {[1, 2, 3, 4, 5].map((star) => (
-                    <span key={star} className="text-yellow-400 text-lg">★</span>
-                  ))}
-                </div>
-                <p className="text-foreground mb-6 italic">"{testimonial.quote}"</p>
-                <div>
-                  <div className="font-semibold text-foreground">{testimonial.author}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.role}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
+      {/* CTA Final (Existing section kept) */}
       <section className="py-20 gradient-hero">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
