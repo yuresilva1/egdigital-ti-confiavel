@@ -37,7 +37,7 @@ const Diferenciais = () => {
       icon: Headphones,
       title: "Atendimento Humano",
       description: "Nada de robôs ou menus infinitos. Você fala diretamente com uma pessoa de verdade que vai entender e resolver seu problema.",
-      highlight: "Gente de verdade",
+      highlight: "Foco na solução", // Alterado de "Gente de verdade" para focar na ação
     },
     {
       icon: Shield,
