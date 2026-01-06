@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { 
   Zap, Shield, Users, Clock, HeadphonesIcon, Monitor, 
-  Network, HardDrive, CheckCircle, ArrowRight, Phone
+  Network, HardDrive, CheckCircle, ArrowRight, Phone, Wrench, Printer
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
@@ -18,14 +18,14 @@ const Index = () => {
       description: "Suporte técnico rápido e eficiente, online ou na sua empresa, quando você precisar.",
     },
     {
-      icon: Monitor,
-      title: "Manutenção de Computadores",
-      description: "Manutenção preventiva e corretiva para manter seus equipamentos funcionando perfeitamente.",
+      icon: Wrench,
+      title: "Reparo de Computadores",
+      description: "Diagnóstico, reparo de hardware e software para manter seus equipamentos funcionando perfeitamente.",
     },
     {
-      icon: Network,
-      title: "Configuração de Redes",
-      description: "Instalação e suporte completo para a rede da sua empresa, com segurança e estabilidade.",
+      icon: Printer,
+      title: "Configuração de Impressoras",
+      description: "Instalação e solução de problemas em impressoras (rede ou USB) e outros periféricos.",
     },
     {
       icon: Shield,

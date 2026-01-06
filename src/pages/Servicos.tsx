@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { 
   HeadphonesIcon, Monitor, Network, Shield, HardDrive, 
-  Settings, Laptop, Server, ArrowRight, Phone, CheckCircle
+  Settings, Laptop, Server, ArrowRight, Phone, CheckCircle, Printer, Wrench
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
@@ -14,6 +14,16 @@ const Servicos = () => {
       icon: HeadphonesIcon,
       title: "Helpdesk Remoto e Presencial",
       description: "Suporte técnico completo, disponível online para resolver problemas rapidamente ou presencialmente quando necessário. Sua equipe nunca fica parada esperando.",
+    },
+    {
+      icon: Wrench,
+      title: "Reparo e Upgrade de Computadores",
+      description: "Diagnóstico, reparo de hardware e software, e upgrades para garantir que seus computadores operem com máxima eficiência e velocidade.",
+    },
+    {
+      icon: Printer,
+      title: "Configuração de Impressoras e Periféricos",
+      description: "Instalação, configuração e solução de problemas em impressoras (rede ou USB), scanners e outros periféricos essenciais para o escritório.",
     },
     {
       icon: Monitor,
