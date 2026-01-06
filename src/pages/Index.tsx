@@ -9,6 +9,7 @@ import SectionTitle from "@/components/SectionTitle";
 import ServiceCard from "@/components/ServiceCard";
 import BenefitItem from "@/components/BenefitItem";
 import PricingCard from "@/components/PricingCard";
+import { pricingPlans } from "@/data/plans"; // Importando dados centralizados
 
 const Index = () => {
   const services = [
@@ -57,41 +58,8 @@ const Index = () => {
     },
   ];
 
-  const plans = [
-    {
-      name: "Plano Mensal",
-      description: "Flexível e completo",
-      features: [
-        "Suporte remoto ilimitado",
-        "Helpdesk via WhatsApp",
-        "Manutenção preventiva",
-        "2 visitas presenciais/mês",
-      ],
-    },
-    {
-      name: "Plano Anual",
-      description: "Melhor custo-benefício",
-      features: [
-        "Tudo do plano semestral",
-        "Visitas preventivas programadas",
-        "Monitoramento preventivo",
-        "Consultoria básica contínua",
-        "Planejamento de TI",
-      ],
-      highlighted: true,
-      badge: "Recomendado",
-    },
-    {
-      name: "Plano Semestral",
-      description: "Mais estabilidade e melhor custo",
-      features: [
-        "Tudo do plano mensal",
-        "Prioridade no atendimento",
-        "5 visitas presenciais/mês",
-        "Relatório simples mensal",
-      ],
-    },
-  ];
+  // Usando a lista centralizada de planos
+  const plans = pricingPlans;
 
   return (
     <Layout>
