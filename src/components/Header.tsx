@@ -45,7 +45,7 @@ const Header = () => {
             <img 
               src="/logo-eg-digital.png" 
               alt="EG Digital Logo" 
-              className="h-12 transition-opacity"
+              className="h-24 transition-opacity"
             />
           </Link>
 

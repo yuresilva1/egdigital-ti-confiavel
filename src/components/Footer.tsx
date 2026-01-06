@@ -14,7 +14,7 @@ const Footer = () => {
               <img 
                 src="/logo-eg-digital.png" 
                 alt="EG Digital Logo" 
-                className="h-14"
+                className="h-28"
               />
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
