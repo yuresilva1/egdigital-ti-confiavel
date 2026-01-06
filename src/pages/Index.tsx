@@ -113,15 +113,15 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left animate-fade-in">
               <span className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium mb-6">
-                TI Terceirizada para sua Empresa
+                Gestão e Suporte de TI para Empresas
               </span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-                Seu departamento de TI{" "}
-                <span className="text-accent">terceirizado</span>, simples e eficiente.
+                Infraestrutura de TI{" "}
+                <span className="text-accent">Otimizada</span> e sem interrupções.
               </h1>
               <p className="text-xl text-white/80 mb-8 max-w-xl mx-auto lg:mx-0">
-                Deixe a tecnologia com quem entende. A EG Digital cuida da TI da sua empresa 
-                para você focar no que realmente importa: o seu negócio.
+                A EG Digital oferece serviços de TI terceirizada de alto nível, garantindo 
+                segurança, produtividade e foco total no crescimento do seu negócio.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button variant="whatsapp" size="xl" asChild>
