@@ -103,22 +103,23 @@ const TITerceirizada = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <SectionTitle
-                badge="O que é TI Terceirizada?"
-                title="Um departamento de TI sem precisar contratar"
+                badge="Infraestrutura & Suporte Técnico de TI"
+                title="Essencial para suas operações diárias"
+                subtitle="Tenha um departamento de TI completo, sem precisar contratar."
                 centered={false}
               />
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  TI Terceirizada significa ter todas as vantagens de um setor de tecnologia 
-                  dedicado, sem os custos e complicações de manter funcionários internos.
+                  A Infraestrutura e o Suporte Técnico de TI são a espinha dorsal das operações diárias de qualquer empresa moderna. 
+                  Com a EG Digital, você garante que seus sistemas funcionem perfeitamente, sem interrupções.
                 </p>
                 <p>
-                  A EG Digital assume a responsabilidade por toda a infraestrutura tecnológica 
-                  da sua empresa: computadores, rede, segurança, suporte ao usuário e muito mais.
+                  Nós cuidamos de toda a sua infraestrutura tecnológica — desde a manutenção de computadores e redes até a segurança dos dados e o suporte aos usuários. 
+                  Tudo o que é necessário para que sua equipe possa trabalhar sem preocupações.
                 </p>
                 <p>
-                  É como ter um time de TI completo trabalhando para você, mas pagando apenas 
-                  pelo serviço — sem CLT, sem encargos, sem dor de cabeça.
+                  É como ter um departamento de TI completo e proativo, focado em manter suas operações fluidas, 
+                  mas com a flexibilidade e a economia da terceirização.
                 </p>
               </div>
             </div>
